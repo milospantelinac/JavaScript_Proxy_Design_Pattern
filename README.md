@@ -35,7 +35,7 @@ Objekat **GeoCoder** simulira uslugu Google Maps. Za GeoCoder šaljete lokaciju 
 
 Programer je odlučio implementirati Proxy objekat jer je **GeoCoder** relativno spor. Proxy objekat se zove **GeoProxy**. Poznato je da dolazi mnogo istih zahteva (za istu lokaciju). Kako bi ubrzao stvari, GeoProxy kešira često tražene lokacije. Ako lokacija nije već učitana u keš, zahtev odlazi na pravi GeoCoder servis i učitava rezultate u keš memoriju.
 
-Šalju se zahtevi za lokaciju nekoliko gradova, ali mnogi od njih su vezani za isti grad. GeoProxy poziva GeoCoder, a potom ga učitava u keš memoriju. Na kraju je GeoProxy obradio 11 zahteva, ali je morao pozvati GeoCoder samo 4 puta. Primetite da klijent nema znanja o proxy objektu (poziva isti interfejs sa standardnom metodom getLatLng).
+Šalju se zahtevi za lokaciju nekoliko gradova, ali mnogi od njih su vezani za isti grad. GeoProxy poziva GeoCoder, a potom ga učitava u keš memoriju. Na kraju je GeoProxy obradio 11 zahteva, ali je pozvao GeoCoder samo 4 puta. Primetite da klijent nema predstavu o proxy objektu (poziva isti interfejs sa standardnom metodom getLatLng).
 
 ```
 function GeoCoder() {
