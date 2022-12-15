@@ -4,7 +4,7 @@ Proxy je dizajn patern koji pruža zamenu za drugi objekat i kontroliše pristup
 
 ## Upotreba Proxija
 
-U objektno orijentisanom programiranju, objekti obavljaju posao koji je predstavljen kroz interfejs (svojstva i metode). Klijenti koji zatraže request od ovih objekata očekuju da se ovaj posao obavi brzo i učinkovito. Međutim, postoje situacije u kojima je objekat ozbiljno ograničen i ne može završiti svoj posao. Obično se to događa kada postoji zavisnost (dependency) o udaljenom (remote) resursu (npr. zbog kašnjenja mreže) ili kada objektu treba dugo vremena da se učita.
+U objektno orijentisanom programiranju, objekti obavljaju posao koji je predstavljen kroz interfejs (svojstva i metode). Klijenti koji zatraže request od ovih objekata očekuju da se ovaj posao obavi brzo i učinkovito. Međutim, postoje situacije u kojima je objekat ozbiljno ograničen i ne može završiti svoj posao. Obično se to događa kada postoji zavisnost (dependency) o udaljenom (remote) resursu (npr. zbog kašnjenja na mreže) ili kada objektu treba dugo vremena da se učita.
 
 U ovakvim situacijama primenjujemo proxy objekat koji "zamenjuje" osnovni objekat. Proxy prosleđuje zahtev ciljanom objektu. Interfejs proxy objekta isti je kao i osnovni objekat i klijenti možda nisu ni svesni da imaju posla sa proxy-jem, a ne pravim objektom.
 
