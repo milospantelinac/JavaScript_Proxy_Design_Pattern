@@ -1,6 +1,6 @@
 # JavaScript - Proxy Design Pattern
 
-Proxy je dizajn patern koji pruža zamenu za drugi objekat i kontroliše pristup tom drugom objektu.
+Proxy je dizajn patern koji pruža zamenu za drugi objekat i kontroliše pristup tog drugog objekta.
 
 ## Upotreba Proxija
 
