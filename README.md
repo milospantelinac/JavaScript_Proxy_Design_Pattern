@@ -44,11 +44,11 @@ function GeoCoder() {
 
         if (address === "Sombor") {
             return "45.7733° N, 19.1151° E";
-        } else if (address === "Novi Sad") {
+        } else if (address === "NoviSad") {
             return "45.2396° N, 19.8227° W";
         } else if (address === "Nis") {
             return "43.3209° N, 21.8954° E";
-        } else if (address === "Banja Luka") {
+        } else if (address === "BanjaLuka") {
             return "44.7722° N, 17.1910° E";
         } else {
             return "";
@@ -82,7 +82,7 @@ function run() {
 
     // GeoLocation zahtevi
 
-    geo.getLatLng("Novi Sad");
+    geo.getLatLng("NoviSad");
     geo.getLatLng("Sombor");
     geo.getLatLng("Sombor");
     geo.getLatLng("Sombor");
@@ -91,8 +91,8 @@ function run() {
     geo.getLatLng("Nis");
     geo.getLatLng("Nis");
     geo.getLatLng("Nis");
-    geo.getLatLng("Banja Luka");
-    geo.getLatLng("Banja Luka");
+    geo.getLatLng("BanjaLuka");
+    geo.getLatLng("BanjaLuka");
 
     console.log("\nCache size: " + geo.getCount());
 }
