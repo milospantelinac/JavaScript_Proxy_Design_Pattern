@@ -31,7 +31,7 @@ Objekti koji učestvuju u ovom paternu su:
 
 ## Primer
 
-Objekat **GeoCoder** simulira uslugu Google Maps. Za GeoCoder dajete lokaciju (mesto na planeti) i ona će vratiti njegovu širinu/dužinu (lat/lng). Naš GeoCoder može razlikovati samo 4 lokacije, ali u stvarnosti ih ima mnogo više, jer uključuje države, pokrajine, gradove i ulice.
+Objekat **GeoCoder** simulira uslugu Google Maps. Za GeoCoder šaljete lokaciju (mesto na planeti) i ona će vratiti njegovu širinu/dužinu (lat/lng). Naš GeoCoder može razlikovati samo 4 lokacije, ali u stvarnosti ih ima mnogo više, jer uključuje države, pokrajine, gradove i ulice.
 
 Programer je odlučio implementirati Proxy objekat jer je **GeoCoder** relativno spor. Proxy objekat se zove **GeoProxy**. Poznato je da dolazi mnogo istih zahteva (za istu lokaciju). Kako bi ubrzao stvari, GeoProxy kešira često tražene lokacije. Ako lokacija nije već učitana u keš, zahtev odlazi na pravi GeoCoder servis i učitava rezultate u keš memoriju.
 
